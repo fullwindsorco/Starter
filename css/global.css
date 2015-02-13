@@ -144,7 +144,7 @@ a:hover {
 
 p {
   margin-bottom: 20px; }
-  p:last-of-type {
+  p:last-child {
     margin-bottom: 0; }
 
 h1,
@@ -203,3 +203,21 @@ img {
 
 h1 {
   padding-left: 50px; }
+
+.bullets li {
+  margin-left: 15px;
+  list-style-type: disc; }
+  .bullets li.bulletsSecondary {
+    list-style-type: none; }
+    .bullets li.bulletsSecondary li {
+      margin-left: 25px;
+      list-style-type: circle; }
+
+.numbered li {
+  margin-left: 15px;
+  list-style-type: decimal; }
+  .numbered li.numberedSecondary {
+    list-style-type: none; }
+    .numbered li.numberedSecondary li {
+      margin-left: 25px;
+      list-style-type: lower-roman; }

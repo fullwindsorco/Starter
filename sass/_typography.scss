@@ -21,7 +21,7 @@ a:hover {
 }
 p {
   margin-bottom: 20px;
-  &:last-of-type {
+  &:last-child {
     margin-bottom: 0;
   }
 }

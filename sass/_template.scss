@@ -42,3 +42,25 @@ img {
 h1 {
   padding-left: 50px;
 }
+.bullets li {
+  margin-left: 15px;
+  list-style-type: disc;
+  &.bulletsSecondary {
+    list-style-type: none;
+    li {
+      margin-left: 25px;
+      list-style-type: circle;
+    }
+  }
+}
+.numbered li {
+  margin-left: 15px;
+  list-style-type: decimal;
+  &.numberedSecondary {
+    list-style-type: none;
+    li {
+      margin-left: 25px;
+      list-style-type: lower-roman;
+    }
+  }
+}
