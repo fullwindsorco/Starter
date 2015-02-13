@@ -1,0 +1,41 @@
+.mainWrap {
+  background-color: #FFF;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: $largeSpace;
+  width: 90%;
+}
+header {
+  @extend .mainWrap;
+  background-color: transparent;
+  padding: $mediumSpace 0;
+  h1 {
+    float: left;
+  }
+}
+aside {
+  .nav {
+    li {
+      border-bottom: solid 1px #EAEAEA;
+      &:first-child {
+        border-top: solid 1px #EAEAEA;
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+    }
+  }
+}
+nav {
+  float: right;
+  line-height: 3.5;
+  a {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+}
+img {
+  height: auto;
+  max-width: 100%;
+}

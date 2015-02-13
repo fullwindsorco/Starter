@@ -14,35 +14,59 @@ $smallSpace: 10px;
   background: transparent url('../images/sprite.svg') no-repeat;
   background-position: $pos;
 }
-
 @mixin break($point) {
   @media (max-width: $point) { @content; }
 }
-
 @mixin rangebreak($min, $max) {
   @media (min-width: $min) and (max-width: $max) { @content; }
+}
+
+/* 
+========================== other high level items
+*/
+
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+hr {
+  background-color: #CCC;
+  border: none;
+  height: 1px;
+  margin-bottom: $largeSpace;
+  &.noSpace {
+    margin-bottom: 0;
+  }
 }
 
 /* 
 ========================== grids 
 */
 
-.grid, .clearFix {
-  &:after {
-    /* Or @extend clearfix */
-    content: "";
-    display: table;
-    clear: both;
+.gridGutter {
+  @extend .clearFix;
+  margin-left: -$largeSpace;
+  margin-bottom: $largeSpace;
+  // overflow: hidden;
+}
+.gridInset {
+  @extend .clearFix;
+  margin-bottom: $largeSpace;
+  [class*='col-'] {
+    padding: 0 $largeSpace / 2;
   }
 }
-.gridSpace {
-  margin-bottom: 100px;
-  &:after {
-    /* Or @extend clearfix */
-    content: "";
-    display: table;
-    clear: both;
+.gridEdge {
+  @extend .clearFix;
+  // margin-left: -$largeSpace;
+  margin-bottom: $largeSpace;
+  [class*='col-'] {
+    padding: 0;
   }
+}
+.noMargin {
+  margin-bottom: 0;
 }
 
 /* 
@@ -51,27 +75,8 @@ $smallSpace: 10px;
 
 [class*='col-'] {
   float: left;
-  padding-right: $largeSpace;
-  &:last-of-type {
-    padding-right: 0;
-  }
-  &.edge {
-  	padding: 0;
-  }
+  padding-left: $largeSpace;
 }
-.gridPad {
-  padding: $largeSpace 0 $largeSpace $largeSpace;
-  [class*='col-']:last-of-type {
-    padding-right: $largeSpace;
-    @include break(820px) {
-      padding-right: 0;
-    }
-  }
-  @include break(820px) {
-    padding: 0;
-  }
-}
-
 .col-1 {
   width: 100%;
 }

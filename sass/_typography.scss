@@ -1,11 +1,11 @@
-$newsGothicBold: 'NewsGothicNo.2W01-Bold', 'Helvetica Neue', 'Arial', Sans-Serif;
-$newsGothicMedium: 'NewsGothicNo.2W01-Mediu 710407', 'Helvetica Neue', 'Arial', Sans-Serif;
-$newsGothicBoldObliq: 'NewsGothicW01-BoldObliq', 'Helvetica Neue', 'Arial', Sans-Serif;
+$helvetica: 'Helvetica Neue', 'Arial', Sans-Serif;
 
 body {
+  background-color: #EAEAEA;
   color: #5b5b5b;
-  font-size: 18px;
-  font-family: $newsGothicMedium;
+  font-size: 16px;
+  font-family: $helvetica;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 a {
@@ -20,71 +20,30 @@ a:hover {
   text-decoration: underline;
 }
 p {
-  line-height: 24px;
   margin-bottom: 20px;
   &:last-of-type {
     margin-bottom: 0;
   }
 }
+h1,
+h2,
+h3,
+h4 {
+  color: #111;
+  font-weight: bold;
+  font-family: $helvetica;
+  line-height: 1.2;
+  margin-bottom: $smallSpace;
+}
 h1 {
-  color: #1F62AF;
-  font-size: 70px;
-  line-height: 70px;
-  font-family: $newsGothicBold;
-  @include break(800px) {
-  	font-size: 60px;
-  	line-height: 60px;
-  	width: 90%;
-  }
-  @include break(600px) {
-		font-size: 50px;
-  	line-height: 50px;
-	}
-	@include break(500px) {
-		font-size: 35px;
-  	line-height: 35px;
-	}
+  font-size: 50px;
 }
 h2 {
-  color: #777;
-  font-family: $newsGothicMedium;
-  font-size: 26px;
-  margin-bottom: 10px;
+  font-size: 30px;
 }
 h3 {
-  color: #5b5b5b;
-  font-size: 33px;
-  font-family: $newsGothicBold;
-  margin-bottom: $mediumSpace + 20px;
-  .home & {    
-    margin-bottom: 10px;
-  }
-}
-.home h4 {
-  background-color: blue;
-  color: #fff;
-  display: inline-block;
-  font-size: 48px;
-  margin-bottom: 50px;
-  padding: 20px 30px;
-  text-transform: uppercase;
-  font-family: $newsGothicBold;
-  @include break(900px) {
-    font-size: 28px;
-    padding: 15px 25px;
-  }
+  font-size: 20px;
 }
 h4 {
-  font-family: $newsGothicBold;
-  font-weight: bold;
-  margin-bottom: $mediumSpace;
-}
-h5 {
-  font-family: $newsGothicMedium;
-  font-size: 20px;
-  margin-bottom: $mediumSpace;
-}
-h6 {
-  @extend h3;
-  margin-bottom: 30px;
+  font-size: 16px;
 }

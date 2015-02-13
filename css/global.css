@@ -1,4 +1,4 @@
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h6, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, hr {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, hr {
   margin: 0;
   padding: 0; }
 
@@ -19,7 +19,7 @@ ol, ul {
 caption, th {
   text-align: left; }
 
-h1, h2, h3, h6, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-weight: normal; }
 
@@ -42,43 +42,47 @@ abbr, acronym {
 ========================== mixins
 */
 /* 
-========================== grids 
+========================== other high level items
 */
-.grid:after, .clearFix:after {
-  /* Or @extend clearfix */
+.clearFix:after, .gridGutter:after, .gridInset:after, .gridEdge:after {
   content: "";
   display: table;
   clear: both; }
 
-.gridSpace {
-  margin-bottom: 100px; }
-  .gridSpace:after {
-    /* Or @extend clearfix */
-    content: "";
-    display: table;
-    clear: both; }
+hr {
+  background-color: #CCC;
+  border: none;
+  height: 1px;
+  margin-bottom: 60px; }
+  hr.noSpace {
+    margin-bottom: 0; }
+
+/* 
+========================== grids 
+*/
+.gridGutter {
+  margin-left: -60px;
+  margin-bottom: 60px; }
+
+.gridInset {
+  margin-bottom: 60px; }
+  .gridInset [class*='col-'] {
+    padding: 0 30px; }
+
+.gridEdge {
+  margin-bottom: 60px; }
+  .gridEdge [class*='col-'] {
+    padding: 0; }
+
+.noMargin {
+  margin-bottom: 0; }
 
 /* 
 ========================== columns 
 */
 [class*='col-'] {
   float: left;
-  padding-right: 60px; }
-  [class*='col-']:last-of-type {
-    padding-right: 0; }
-  [class*='col-'].edge {
-    padding: 0; }
-
-.gridPad {
-  padding: 60px 0 60px 60px; }
-  .gridPad [class*='col-']:last-of-type {
-    padding-right: 60px; }
-    @media (max-width: 820px) {
-      .gridPad [class*='col-']:last-of-type {
-        padding-right: 0; } }
-  @media (max-width: 820px) {
-    .gridPad {
-      padding: 0; } }
+  padding-left: 60px; }
 
 .col-1 {
   width: 100%; }
@@ -120,9 +124,11 @@ abbr, acronym {
   width: 87.5%; }
 
 body {
+  background-color: #EAEAEA;
   color: #5b5b5b;
-  font-size: 18px;
-  font-family: "NewsGothicNo.2W01-Mediu 710407", "Helvetica Neue", "Arial", Sans-Serif;
+  font-size: 16px;
+  font-family: "Helvetica Neue", "Arial", Sans-Serif;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased; }
 
 a {
@@ -137,67 +143,60 @@ a:hover {
   text-decoration: underline; }
 
 p {
-  line-height: 24px;
   margin-bottom: 20px; }
   p:last-of-type {
     margin-bottom: 0; }
 
-h1 {
-  color: #1F62AF;
-  font-size: 70px;
-  line-height: 70px;
-  font-family: "NewsGothicNo.2W01-Bold", "Helvetica Neue", "Arial", Sans-Serif; }
-  @media (max-width: 800px) {
-    h1 {
-      font-size: 60px;
-      line-height: 60px;
-      width: 90%; } }
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 50px;
-      line-height: 50px; } }
-  @media (max-width: 500px) {
-    h1 {
-      font-size: 35px;
-      line-height: 35px; } }
-
-h2 {
-  color: #777;
-  font-family: "NewsGothicNo.2W01-Mediu 710407", "Helvetica Neue", "Arial", Sans-Serif;
-  font-size: 26px;
+h1,
+h2,
+h3,
+h4 {
+  color: #111;
+  font-weight: bold;
+  font-family: "Helvetica Neue", "Arial", Sans-Serif;
+  line-height: 1.2;
   margin-bottom: 10px; }
 
-h3, h6 {
-  color: #5b5b5b;
-  font-size: 33px;
-  font-family: "NewsGothicNo.2W01-Bold", "Helvetica Neue", "Arial", Sans-Serif;
-  margin-bottom: 40px; }
-  .home h3, .home h6 {
-    margin-bottom: 10px; }
+h1 {
+  font-size: 50px; }
 
-.home h4 {
-  background-color: blue;
-  color: #fff;
-  display: inline-block;
-  font-size: 48px;
-  margin-bottom: 50px;
-  padding: 20px 30px;
-  text-transform: uppercase;
-  font-family: "NewsGothicNo.2W01-Bold", "Helvetica Neue", "Arial", Sans-Serif; }
-  @media (max-width: 900px) {
-    .home h4 {
-      font-size: 28px;
-      padding: 15px 25px; } }
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 20px; }
 
 h4 {
-  font-family: "NewsGothicNo.2W01-Bold", "Helvetica Neue", "Arial", Sans-Serif;
-  font-weight: bold;
-  margin-bottom: 20px; }
+  font-size: 16px; }
 
-h5 {
-  font-family: "NewsGothicNo.2W01-Mediu 710407", "Helvetica Neue", "Arial", Sans-Serif;
-  font-size: 20px;
-  margin-bottom: 20px; }
+.mainWrap, header {
+  background-color: #FFF;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 60px;
+  width: 90%; }
 
-h6 {
-  margin-bottom: 30px; }
+header {
+  background-color: transparent;
+  padding: 20px 0; }
+  header h1 {
+    float: left; }
+
+aside .nav li {
+  border-bottom: solid 1px #EAEAEA; }
+  aside .nav li:first-child {
+    border-top: solid 1px #EAEAEA; }
+aside .nav a {
+  display: inline-block;
+  padding: 10px 20px; }
+
+nav {
+  float: right;
+  line-height: 3.5; }
+  nav a {
+    display: inline-block;
+    padding: 5px 10px; }
+
+img {
+  height: auto;
+  max-width: 100%; }
