@@ -3,9 +3,9 @@ $helvetica: 'Helvetica Neue', 'Arial', Sans-Serif;
 body {
   background-color: #EAEAEA;
   color: #5b5b5b;
-  font-size: 16px;
+  font-size: $baseFontSize;
   font-family: $helvetica;
-  line-height: 1.5;
+  line-height: $baseLineHeight;
   -webkit-font-smoothing: antialiased;
 }
 a {
@@ -32,7 +32,7 @@ h4 {
   color: #111;
   font-weight: bold;
   font-family: $helvetica;
-  line-height: 1.2;
+  line-height: $baseLineHeight -.3;
   margin-bottom: $smallSpace;
 }
 h1 {

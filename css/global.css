@@ -154,7 +154,7 @@ h4 {
   color: #111;
   font-weight: bold;
   font-family: "Helvetica Neue", "Arial", Sans-Serif;
-  line-height: 1.2;
+  line-height: 1.5 -0.3;
   margin-bottom: 10px; }
 
 h1 {
@@ -200,6 +200,17 @@ nav {
 img {
   height: auto;
   max-width: 100%; }
+  img.left {
+    float: left;
+    margin: 0 30px 30px 0; }
+  img.right {
+    float: right;
+    margin: 0 0 30px 30px; }
+
+.center {
+  text-align: center; }
+  .center img {
+    margin-bottom: 20px; }
 
 h1 {
   padding-left: 50px; }
@@ -221,3 +232,36 @@ h1 {
     .numbered li.numberedSecondary li {
       margin-left: 25px;
       list-style-type: lower-roman; }
+
+blockquote {
+  border-bottom: solid 1px #EAEAEA;
+  border-top: solid 1px #EAEAEA;
+  font-size: 21px;
+  margin-bottom: 20px;
+  padding: 20px 60px; }
+  blockquote.block {
+    color: #333;
+    font-size: 16px;
+    font-style: italic; }
+  blockquote .name {
+    color: #5b5b5b;
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    margin-top: 10px; }
+    blockquote .name:before, blockquote .name:after {
+      content: ''; }
+  blockquote span {
+    position: relative; }
+    blockquote span:after {
+      content: '\201D';
+      right: -13px;
+      top: -5px; }
+  blockquote span {
+    position: relative; }
+    blockquote span:before {
+      content: '\201C';
+      left: -13px;
+      position: absolute;
+      top: -5px;
+      text-indent: 0; }

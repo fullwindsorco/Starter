@@ -38,6 +38,20 @@ nav {
 img {
   height: auto;
   max-width: 100%;
+  &.left {
+    float: left;
+    margin: 0 30px 30px 0;
+  }
+  &.right {
+    float: right;
+    margin: 0 0 30px 30px;
+  }
+}
+.center {
+  text-align: center;
+  img {
+    margin-bottom: $mediumSpace;
+  }
 }
 h1 {
   padding-left: 50px;
@@ -64,3 +78,45 @@ h1 {
     }
   }
 }
+blockquote {
+  border-bottom: solid 1px #EAEAEA;
+  border-top: solid 1px #EAEAEA;
+  font-size: $baseFontSize + 5;
+  margin-bottom: $mediumSpace;
+  padding: $mediumSpace $largeSpace;
+  &.block {
+    color: #333;
+    font-size: $baseFontSize;
+    font-style: italic;
+  }
+  .name {
+    color: #5b5b5b;
+    display: block;
+    font-size: $baseFontSize - 3;
+    font-style: normal;
+    margin-top: $smallSpace;
+    &:before, &:after {
+      content: '';
+    }
+  }
+  span {
+    position: relative;
+    &:after {
+      content: '\201D';
+      right: -13px;
+      top: -5px;
+    }
+  }
+  span {
+    position: relative;
+    &:before {
+      content: '\201C';
+      left: -13px;
+      position: absolute;
+      top: -5px;
+      text-indent: 0;
+    }
+  }
+}
+
+
