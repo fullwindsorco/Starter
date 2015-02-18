@@ -215,23 +215,27 @@ img {
 h1 {
   padding-left: 50px; }
 
-.bullets li {
-  margin-left: 15px;
-  list-style-type: disc; }
-  .bullets li.bulletsSecondary {
-    list-style-type: none; }
-    .bullets li.bulletsSecondary li {
-      margin-left: 25px;
-      list-style-type: circle; }
+.bullets {
+  margin-left: 20px; }
+  .bullets li {
+    margin-left: 15px;
+    list-style-type: disc; }
+    .bullets li.bulletsSecondary {
+      list-style-type: none; }
+      .bullets li.bulletsSecondary li {
+        margin-left: 25px;
+        list-style-type: circle; }
 
-.numbered li {
-  margin-left: 15px;
-  list-style-type: decimal; }
-  .numbered li.numberedSecondary {
-    list-style-type: none; }
-    .numbered li.numberedSecondary li {
-      margin-left: 25px;
-      list-style-type: lower-roman; }
+.numbered {
+  margin-left: 20px; }
+  .numbered li {
+    margin-left: 15px;
+    list-style-type: decimal; }
+    .numbered li.numberedSecondary {
+      list-style-type: none; }
+      .numbered li.numberedSecondary li {
+        margin-left: 25px;
+        list-style-type: lower-roman; }
 
 blockquote {
   border-bottom: solid 1px #EAEAEA;
