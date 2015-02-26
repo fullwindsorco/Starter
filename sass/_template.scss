@@ -56,6 +56,15 @@ img {
 h1 {
   padding-left: 50px;
 }
+
+// Common
+
+.textRight {
+  text-align: right;
+}
+
+// Lists
+
 .bullets {
   margin-left: $mediumSpace;
   li {
@@ -84,45 +93,79 @@ h1 {
     }
   }
 }
-blockquote {
-  border-bottom: solid 1px #EAEAEA;
-  border-top: solid 1px #EAEAEA;
-  font-size: $baseFontSize + 5;
-  margin-bottom: $mediumSpace;
-  padding: $mediumSpace $largeSpace;
-  &.block {
-    color: #333;
-    font-size: $baseFontSize;
-    font-style: italic;
-  }
-  .name {
-    color: #5b5b5b;
-    display: block;
-    font-size: $baseFontSize - 3;
-    font-style: normal;
-    margin-top: $smallSpace;
-    &:before, &:after {
-      content: '';
+
+// Forms
+
+form {
+  button {
+    float: right;
+    margin-right: 0;
+    &.left {
+      float: none;
     }
-  }
-  span {
-    position: relative;
-    &:after {
-      content: '\201D';
-      right: -13px;
-      top: -5px;
-    }
-  }
-  span {
-    position: relative;
-    &:before {
-      content: '\201C';
-      left: -13px;
-      position: absolute;
-      top: -5px;
-      text-indent: 0;
+    &:last-child {
+      margin-right: $smallSpace;
     }
   }
 }
+button, a.button {
+  border: none;
+  background-color: $primaryColor;
+  border-radius: $primaryBorderRadius;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  margin-right: $smallSpace;
+  &.full {
+    margin-bottom: $smallSpace;
+    margin-right: 0;
+    width: 100%;
+    &:last-child {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+  }
+  &.alternate {
+    background-color: #999;
+    &:hover {
+      background-color: #555;
+    }
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
+  padding: 8px 20px;
+  &.large {
+    padding: 15px 25px;
+  }
+  &:hover {
+    background-color: darken($primaryColor, 20%);
+    text-decoration: none;
+  }
+}
+input, textarea, .dropDown {
+  border: solid 1px #BEBEBE;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  margin-bottom: $mediumSpace;
+  padding: 6px 10px;
+  width: 100%;
+}
+label {
+  display: block;
+  padding: 7px 10px;
+  .noMargin & {
+    text-align: right;
+  }
+}
+.dropDown {
+  background-position: right center;
+}
 
+// Icons
 
+.icon-template-logo {
+  background-position: 0 20px;
+}

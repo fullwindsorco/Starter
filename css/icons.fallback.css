@@ -2,5 +2,9 @@
 .icon-template-logo {
 	background-image: url('png/template-logo.png');
 	background-repeat: no-repeat;
-  background-position: 0 center;
+}
+
+.dropDown {
+	background-image: url('png/form-select-arrows.png');
+	background-repeat: no-repeat;
 }

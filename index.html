@@ -11,6 +11,8 @@
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+ <script src="js/jquery.infieldlabel.min.js"></script>
+ 
 </head>
 
 <body>
@@ -203,7 +205,7 @@
   <div class="gridGutter">
     <div class="col-1-2">
       <h2>Unordered list</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facilis quaerat neque accusamus minus error fugiat. Neque, molestiae adipisci ipsa iste magni fugit maxime quod voluptatem perspiciatis dicta voluptatum quisquam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolor si</p>
       <ul class="bullets">
         <li>natus fuga consectetur</li>
         <li>aecati a debitis </li>
@@ -222,7 +224,7 @@
     </div>
     <div class="col-1-2">
       <h2>Ordered list</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, facilis quaerat neque accusamus minus error fugiat. Neque, molestiae adipisci ipsa iste magni fugit maxime quod voluptatem perspiciatis dicta voluptatum quisquam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolor si</p>
       <ul class="numbered">
         <li>natus fuga consectetur</li>
         <li>aecati a debitis </li>
@@ -241,6 +243,105 @@
     </div>
   </div>
 
+  <hr>
+
+  <div class="gridEdge noMargin">
+    <h2>Buttons and forms</h2>
+    <p class="space">A quick reminder, use <code>&lt;a&gt;</code> when you are linking with an <code>href</code>. Use <code>&lt;button&gt;</code> inside a form.</p>
+    <h3>Buttons</h3>
+    <h4>Anchor buttons</h4>
+    <p class="margin">
+      <a class="button" href="#">Button</a><a class="button alternate" href="#">Alternate</a>
+    </p>
+    <p class="margin textRight">
+      <a class="button" href="#">Button</a><a class="button alternate" href="#">Alternate</a>
+    </p>
+    <p class="margin">
+      <a class="button full" href="#">Button</a><a class="button alternate full" href="#">Alternate</a>
+    </p>
+    <h4>&lt;button&gt; tag buttons</h4>
+    <p>
+      <button>Button</button><button class="alternate">Alternate</button>
+    </p>
+    <p class="margin textRight">
+      <button class="left">Button</button><button class="left alternate">Alternate</button>
+    </p>
+    <p class="margin textRight">
+      <button class="full">Button</button><button class="full alternate">Alternate</button>
+    </p>
+  </div>
+  <div class="gridGutter">
+    <div class="col-1">
+      <h3>Forms</h3>
+      <div class="gridGutter">
+        <div class="col-1-2">
+          <h4>Label on side</h4>
+          <form action="">
+            <div class="gridEdge noMargin">
+              <div class="col-1-3">
+                <label>Name</label>  
+              </div>
+              <div class="col-2-3">
+                <input type="text">              
+              </div>
+            </div>
+            <div class="gridEdge noMargin">
+              <div class="col-1-3">
+                <label>Car Type</label>  
+              </div>
+              <div class="col-2-3">
+                <select class="dropDown" name="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+            </div>
+            <div class="gridEdge noMargin">
+              <div class="col-1-3">
+                <label>Message</label>  
+              </div>
+              <div class="col-2-3">
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <button>Button</button><button class="alternate">Alternate</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-1-2">
+          <h4>Label on top</h4>
+          <form action="">
+            <label>Name</label><input class="noMargin" type="text">
+            <label>Email</label><input class="noMargin" type="text">
+            <label>Message</label>
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <button>Button</button><button class="alternate">Alternate</button>
+          </form>
+        </div>
+        <!-- <button class="large">Button</button><button class="large alternate">Button</button> -->
+      </div>
+    </div>
+    <div class="col-1">
+      <h4>Full width form and placeholder label (with &lt;IE9 fallback)</h4>
+      <form action="">
+        <div class="gridGutter noMargin">
+          <div class="col-1-2 infield-label">
+            <label for="nameField">Name</label>
+            <input type="text" name="nameField">
+          </div>
+          <div class="col-1-2 infield-label">
+            <label for="emailField">Email</label>
+            <input type="text" name="emailField">
+          </div>
+        </div>
+        <span class="infield-label">
+          <label for="messageField">Message</label>
+          <input type="text" name="messageField">
+        </span>
+      </form>
+    </div>
+  </div>
   <hr>
 
   <div class="gridEdge">
@@ -291,13 +392,26 @@
 
   </footer>
 
+  <script src='js/jquery.customSelect.min.js'></script>
   <script>
         /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
 
     (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
         
       grunticon(["css/icons.data.svg.css", "css/icons.data.png.css", "css/icons.fallback.css"]);
+
+      // customSelect
+      $(document).ready(function(){
+        $('.dropDown').customSelect({customClass:'dropDown'});
+      });
+
+      // infieldlabel
+      $(function() {
+        $('.infield-label').infieldLabel(); 
+      });
+
   </script>
+  
   <noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
 
 </body>
