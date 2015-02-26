@@ -166,6 +166,20 @@ label {
 .dropDown {
   background-position: right center;
 }
+form input[type="checkbox"],
+form input[type="radio"] {
+  margin-right: 10px;
+  width: auto;
+}
+.bulletsCheckboxes {
+  li {
+    display: table;
+    label {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
 
 // Icons
 

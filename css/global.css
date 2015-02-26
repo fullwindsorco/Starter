@@ -286,7 +286,7 @@ form button {
 button, a.button {
   border: none;
   background-color: #1F62AF;
-  border-radius: 0px;
+  border-radius: 2px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -331,6 +331,17 @@ label {
 
 .dropDown {
   background-position: right center; }
+
+form input[type="checkbox"],
+form input[type="radio"] {
+  margin-right: 10px;
+  width: auto; }
+
+.bulletsCheckboxes li {
+  display: table; }
+  .bulletsCheckboxes li label {
+    display: table-cell;
+    vertical-align: middle; }
 
 .icon-template-logo {
   background-position: 0 20px; }
