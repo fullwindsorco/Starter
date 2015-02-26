@@ -152,6 +152,9 @@ input, textarea, .dropDown {
   margin-bottom: $mediumSpace;
   padding: 6px 10px;
   width: 100%;
+  &:last-child:not(.keepMargin) {
+    margin-bottom: 0;
+  }
 }
 label {
   display: block;

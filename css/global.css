@@ -320,6 +320,8 @@ input, textarea, .dropDown {
   margin-bottom: 20px;
   padding: 6px 10px;
   width: 100%; }
+  input:last-child:not(.keepMargin), textarea:last-child:not(.keepMargin), .dropDown:last-child:not(.keepMargin) {
+    margin-bottom: 0; }
 
 label {
   display: block;
