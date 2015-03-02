@@ -7,6 +7,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" type="text/css" href="css/global.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,10 +21,10 @@
   <header>
 
     <div class="gridEdge noMargin">
-      <div class="col-3-5">
-        <h1 class="icon-template-logo">Front-End Template</h1>
-      </div>
       <div class="col-2-5">
+        <h1>Front-End Template</h1>
+      </div>
+      <div class="col-3-5">
         <nav>
           <a href="#">Home</a>
           <a href="#">Products</a>
@@ -33,8 +35,10 @@
       </div>
     </div>
 
-    <div class="banner">
-      <img src="http://placehold.it/960x300" alt="">
+    <div id="owl-demo" class="banner owl-carousel">
+      <div class="item"><img src="http://placehold.it/1200x300" alt=""></div>
+      <div class="item"><img src="http://placehold.it/1200x300" alt=""></div>
+      <div class="item"><img src="http://placehold.it/1200x300" alt=""></div>
     </div>
     
   </header>
@@ -66,11 +70,11 @@
   
   <div class="gridEdge">
     <div class="col-1">
-      <h2>Layout with inset columns</h2>
+      <h2>Layout with inset columns and dividers</h2>
     </div>
   </div>
 
-  <div class="gridInset">
+  <div class="gridInset dividers">
     <div class="col-1-3">
       <h3>Column A</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, a, debitis tenetur ea est earum et laudantium ab quasi facere totam impedit possimus eligendi beatae natus fuga consectetur quod incidunt</p>
@@ -348,7 +352,6 @@
         <ul class="bulletsCheckboxes">
           <li><label><input type="radio" name="sex" value="male">Male</label></li>
           <li><label><input type="radio" name="sex" value="female">Female</label></li>
-          <li><label><input type="radio" name="sex" value="questioning">Questioning</label></li>
         </ul>
       </form>
     </div>
@@ -357,7 +360,6 @@
         <ul class="bulletsCheckboxes">
           <li><label><input type="checkbox" name="sex" value="male">Male</label></li>
           <li><label><input type="checkbox" name="sex" value="female">Female</label></li>
-          <li><label><input type="checkbox" name="sex" value="questioning">Questioning</label></li>
         </ul>
       </form>
     </div>
@@ -407,12 +409,12 @@
   </div>
   
   </main>
-
   <footer>
 
   </footer>
 
   <script src='js/jquery.customSelect.min.js'></script>
+  <script src='js/owl.carousel.min.js'></script>
   <script>
         /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
 
@@ -420,15 +422,32 @@
         
       grunticon(["css/icons.data.svg.css", "css/icons.data.png.css", "css/icons.fallback.css"]);
 
-      // customSelect
+      
       $(document).ready(function(){
-        $('.dropDown').customSelect({customClass:'dropDown'});
+        // customSelect
+        $('.dropDown').customSelect({
+          customClass:'dropDown'
+        });
+        
+        // owl carousel
+        $("#owl-demo").owlCarousel({
+          // autoPlay: 3000,
+          slideSpeed: 100,
+          singleItem:true,
+          stopOnHover: true,
+          navigation: true,
+          navigationText: ["<div class='sliderArrowLeft'></div>","<div class='sliderArrowRight'></div>"],
+          pagination: false
+        });
+
       });
 
       // infieldlabel
       $(function() {
         $('.infield-label').infieldLabel(); 
       });
+
+      
 
   </script>
   

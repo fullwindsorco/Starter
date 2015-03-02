@@ -1,7 +1,7 @@
 .mainWrap {
   background-color: #FFF;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1200px;
   padding: $largeSpace;
   width: 90%;
 }
@@ -53,8 +53,11 @@ img {
     margin-bottom: $mediumSpace;
   }
 }
-h1 {
-  padding-left: 50px;
+.dividers [class*='col-'] {
+  border-right: solid 1px #CCC;
+  &:last-of-type {
+    border: none;
+  }
 }
 
 // Common
@@ -186,3 +189,26 @@ form input[type="radio"] {
 .icon-template-logo {
   background-position: 0 20px;
 }
+
+// Banner / Slider
+
+.owl-prev div, .owl-next div {
+  height: 54px;
+  width: 27px;
+}
+.owl-prev {
+  left: 30px;
+  position: absolute;
+}
+.owl-next {
+  right: 30px;
+  position: absolute;
+}
+.owl-controls {
+  width: 100%;
+}
+.owl-item > img {
+  display: block;
+}
+
+
