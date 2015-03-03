@@ -211,4 +211,67 @@ form input[type="radio"] {
   display: block;
 }
 
+// Tabs
+
+.tabs {
+  @extend .clearFix;
+  > div {
+    border: $uiBorders;
+    border-right: none;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    padding: 5px 15px;
+    &.current {
+      border-bottom: solid $borderWidth #fff;
+      cursor: default;
+    }
+    &:last-of-type {
+      border-right: $uiBorders;      
+    }
+  }
+}
+.panels {
+  border: $uiBorders;
+  margin-top: -$borderWidth;
+  > div {
+    display: none;
+    padding: $mediumSpace;
+    &.current {
+      display: block;
+    }
+  }
+}
+
+// Accordions
+
+.accButton {
+  border-left: $uiBorders;
+  border-right: $uiBorders;
+  border-bottom: $uiBorders;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px $mediumSpace;
+  &.active {
+    border-bottom: $uiBorders;
+  }
+  &:first-of-type {
+    border-top: $uiBorders;
+  }
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+.accPanel {
+  border: $uiBorders;
+  border-top: none;
+  display: none;
+  padding: $mediumSpace;
+  &.current {
+    display: block;
+  }
+}
+
+
+
 

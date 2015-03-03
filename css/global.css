@@ -44,7 +44,7 @@ abbr, acronym {
 /* 
 ========================== other high level items
 */
-.clearFix:after, .gridGutter:after, .gridInset:after, .gridEdge:after {
+.clearFix:after, .gridGutter:after, .gridInset:after, .gridEdge:after, .tabs:after {
   content: "";
   display: table;
   clear: both; }
@@ -365,6 +365,50 @@ form input[type="radio"] {
 
 .owl-item > img {
   display: block; }
+
+.tabs > div {
+  border: solid 1px #BEBEBE;
+  border-right: none;
+  cursor: pointer;
+  float: left;
+  font-weight: bold;
+  padding: 5px 15px; }
+  .tabs > div.current {
+    border-bottom: solid 1px #fff;
+    cursor: default; }
+  .tabs > div:last-of-type {
+    border-right: solid 1px #BEBEBE; }
+
+.panels {
+  border: solid 1px #BEBEBE;
+  margin-top: -1px; }
+  .panels > div {
+    display: none;
+    padding: 20px; }
+    .panels > div.current {
+      display: block; }
+
+.accButton {
+  border-left: solid 1px #BEBEBE;
+  border-right: solid 1px #BEBEBE;
+  border-bottom: solid 1px #BEBEBE;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 20px; }
+  .accButton.active {
+    border-bottom: solid 1px #BEBEBE; }
+  .accButton:first-of-type {
+    border-top: solid 1px #BEBEBE; }
+  .accButton:last-of-type {
+    border-bottom: none; }
+
+.accPanel {
+  border: solid 1px #BEBEBE;
+  border-top: none;
+  display: none;
+  padding: 20px; }
+  .accPanel.current {
+    display: block; }
 
 /* infieldLabel styles */
 .infield-label {
