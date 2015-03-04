@@ -1,56 +1,24 @@
+$(document).ready(function() {
 
-// Accordions and Tabs from what we did for Slate.
-// Feel free to discard.
+// Tabs
 
-$(document).ready(function(){
-  $('<ul class="tabs"><ul class="header"></ul></ul>').insertAfter('.tab-toggle');
-  $('.tab-toggle .acc-button').each(function(){
-    var content = $(this).clone().wrap('<div>').parent().html();
-    $(this).parent().siblings('.tabs').children('.header').append(content);
+  $('.tabs > div').parent().next('.panels').children('div').first().addClass('current');
+  $('.tabs > div').first().addClass('current');
+  $('.tabs > div').click(function() {
+    var indexTab = $( ".tabs div" ).index( this );
+    $('.tabs > div').removeClass('current');
+    $(this).addClass('current');
+    $(this).parent().next('.panels').children('div').removeClass('current');
+    $(this).parent().next('.panels').children('div').eq(indexTab).addClass('current');
   });
-  $('.tab-toggle .acc-panel').each(function(){
-    var content = $(this).clone().wrap('<div>').parent().html();
-    $(this).parent().siblings('.tabs').append(content);
-  });
-  $('.tabs').each(function(){
-    $(this).find('.acc-panel').first().addClass('active');
-    $(this).find('.acc-button').first().addClass('selected');
-  });
-  $('.accordion .acc-button').click(function(){
-    if ($(this).find('.fa').is(':visible')) {
-      var buttonID = $(this).attr('id');
-      if ($(this).parent('.link-list').length) {
-        $('.link-list .acc-button').not(this).removeClass('selected');
-        var accPanel = $('.link-list .acc-panel');
-      }
-      else {
-        $(this).siblings('.acc-button').removeClass('selected');
-        var accPanel = $(this).siblings('.acc-panel');
-      }
-      $(this).toggleClass('selected');
-      $(accPanel).each(function(){
-        $(this).addClass('test');
-        var id = $(this).attr('id');
-        if (id !== buttonID) {
-          $(this).slideUp(175);
-        }
-        else {
-          $(this).slideToggle(175);
-        }
-      });
-    }
-  });
-  $('.header > .acc-button').click(function(){
-    $(this).siblings('.acc-button').removeClass('selected');
-    $(this).addClass('selected');
-    var buttonID = $(this).attr('id');
-    var tabPanel = $(this).parent('.header').siblings('.acc-panel');
-    $(tabPanel).each(function(){
-      var id = $(this).attr('id');
-      $(this).removeClass('active');
-      if (id == buttonID) {
-        $(this).toggleClass('active');
-      }
-    });
-  });
+
+
+// Accordions
+
+  $('.accButton').click(function() {
+    $(this).addClass('current');
+    $(this).not().next().siblings('.accPanel').slideUp();
+    $(this).next('.accPanel').slideToggle(200);
+  })
+
 });
