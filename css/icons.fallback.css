@@ -25,3 +25,13 @@
   background-image: url('png/sliderArrowRight.png');
   background-repeat: no-repeat;
 }
+
+.arrowDown {
+  background-image: url('png/arrowDown.png');
+  background-repeat: no-repeat;
+}
+
+.arrowUp {
+  background-image: url('png/arrowUp.png');
+  background-repeat: no-repeat;
+}

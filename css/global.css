@@ -348,6 +348,9 @@ form input[type="radio"] {
 .icon-template-logo {
   background-position: 0 20px; }
 
+.arrowDown, .arrowUp {
+  background-position: right center; }
+
 .owl-prev div, .owl-next div {
   height: 54px;
   width: 27px; }
