@@ -19,7 +19,7 @@
   background-repeat: no-repeat;
 }
 
-.arrowDown {
+.accButton {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAJCAYAAACmJ6W6AAAA3ElEQVQ4T83SYQ3CMBCGYaYAHCABJIASNgV0DsBBHVAcgAIqAZyAA743uZKONBk/COWSplt3yZ59u2aics5FNu/9lfuxUn9QT1Q/+8+rEcDrrVutu1Y/BjHwxvrXn37oN78MNGmBSNWV4OqbqeGitbTGh/ZVFbSNR6v9kMFl8X26L4BvetbWAGNqMhhwRmVqZ0GoTmCSJWGSpgCTMONUpV5oSxxgzOBcc5bAZ0u4GniQdJY4yJPW/C3Go9Llb1SvQdIZnGRJeWFne4F31bUGKKJtVICTOLMd/gWM4wnhRU0KwR7RxgAAAABJRU5ErkJggg==');
   background-repeat: no-repeat;
 }

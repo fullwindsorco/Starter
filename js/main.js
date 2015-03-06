@@ -18,8 +18,8 @@ $(document).ready(function() {
   $('.accButton').click(function() {
     $(this).addClass('current');
     $(this).toggleClass('arrowDown arrowUp');
+    $(this).siblings('.accButton').removeClass('arrowUp');
     $(this).not().next().siblings('.accPanel').slideUp();
     $(this).next('.accPanel').slideToggle(200);
   });
-
 });
