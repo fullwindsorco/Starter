@@ -39,16 +39,20 @@ h4 {
   margin-bottom: $smallSpace;
 }
 h1 {
-  font-size: 40px;
+  font-size: $baseFontSize + 30;
+  margin-bottom: $baseBottomMargin + 15;
 }
 h2 {
-  font-size: 30px;
+  font-size: $baseFontSize + 10;
+  margin-bottom: $baseBottomMargin + 8;
 }
 h3 {
-  font-size: 20px;
+  font-size: $baseFontSize + 2;
+  margin-bottom: $baseBottomMargin + 5;
 }
 h4 {
-  font-size: 16px;
+  font-size: $baseFontSize;
+  margin-bottom: $baseBottomMargin;
 }
 blockquote {
   border-bottom: solid 1px #EAEAEA;
