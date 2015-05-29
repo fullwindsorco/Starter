@@ -195,8 +195,8 @@ form input[type="radio"] {
 // Banner / Slider
 
 .owl-prev div, .owl-next div {
-  height: 54px;
-  width: 27px;
+  height: 60px;
+  width: 30px;
 }
 .owl-prev {
   left: 30px;
@@ -211,6 +211,12 @@ form input[type="radio"] {
 }
 .owl-item > img {
   display: block;
+}
+.sliderArrowLeft {
+  @include sprite(0px -60px);
+}
+.sliderArrowRight {
+  @include sprite(0 0);
 }
 
 // Tabs
@@ -253,7 +259,8 @@ form input[type="radio"] {
   border-bottom: $uiBorders;
   cursor: pointer;
   font-weight: bold;
-  padding: 8px $mediumSpace;
+  padding: 8px 50px 8px $mediumSpace;
+  position: relative;
   &.active {
     border-bottom: $uiBorders;
   }
@@ -262,6 +269,19 @@ form input[type="radio"] {
   }
   &:last-of-type {
     border-bottom: none;
+  }
+  &:after {
+    @include sprite(0px -135px);
+    content: '';
+    height: 11px;
+    right: 24px;
+    position: absolute;
+    margin-top: -4px;
+    top: 50%;
+    width: 16px;
+  }
+  &.arrowUp:after {
+    background-position: 0 -119px;
   }
 }
 .accPanel {
