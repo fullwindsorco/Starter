@@ -1,0 +1,152 @@
+.burger {
+  position: absolute;
+  padding: 10px;
+  right: 10px;
+  top: 4px;
+  display: none;
+  li {
+    width: 30px;
+    height: 4px;
+    background-color: $primaryColor;
+    border-radius: 3px;
+    margin: 5px 0;
+  }
+  .open li {
+    background-color: darken($primaryColor, 15%);
+  }
+  @include break($navBreak) {
+    display: block;
+  }
+}
+nav {
+  @include break($navBreak) {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    background-color: #49A4B3;
+    width: 100%;
+  }
+  &.mobile {
+    display: none;
+    @include break($navBreak) {
+      display: block;
+    }
+  }
+}
+
+body {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  
+  -moz-tap-highlight-color:rgba(0,0,0,0); 
+  -moz-text-size-adjust: none;
+  -moz-font-smoothing: antialiased;
+  
+  -ms-tap-highlight-color:rgba(0,0,0,0); 
+  -ms-text-size-adjust: none;
+  -ms-font-smoothing: antialiased;
+}
+
+
+.outerWrap {
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 1;
+/*  Prevents Flickering  */
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+@include break($navBreak) {
+
+/*  Mobile Nav Styling  */
+
+nav.slide {
+  display: block;
+}
+
+nav > ul {
+  float: right;
+  height: 100%;
+  overflow-y: auto;
+  width: 240px;
+}
+nav > ul > .menu-item {
+  display: block;
+  float: none;
+}
+nav > ul > li > a {
+  display: block;
+  padding: 10px 25px;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+nav > ul > li > a.logo {
+  display: none;
+}
+
+.header-section {
+  margin-top: 60px;
+}
+
+
+// CONTENT ANNIMATION
+.outerWrap {
+  position: relative;
+  z-index: 1;
+}
+
+// Content Sliding Open Effect
+.outerWrap.open {   
+  -webkit-transform: translate3d(-240px,0,0);
+  -webkit-animation: open .5s ease-in-out;
+  
+  -moz-transform: translate3d(-240px,0,0);
+  -moz-animation: open .5s ease-in-out;
+  
+  transform: translate3d(-240px,0,0);
+  animation: open .5s ease-in-out;
+}
+@-webkit-keyframes open {
+  0%      {-webkit-transform: translate3d(0,0,0);}
+  70%    {-webkit-transform: translate3d(-260px,0,0);}
+  100%  {-webkit-transform: translate3d(-240px,0,0);}
+}
+@-moz-keyframes open {
+  0%      {-moz-transform: translate3d(0,0,0);}
+  70%    {-moz-transform: translate3d(-260px,0,0);}
+  100%  {-moz-transform: translate3d(-240px,0,0);}
+}
+@keyframes open {
+  0%      {transform: translate3d(0,0,0);}
+  70%    {transform: translate3d(-260px,0,0);}
+  100%  {transform: translate3d(-240px,0,0);}
+}
+
+// Content Sliding Closed Effect
+.outerWrap.close {
+  -webkit-transform: none;
+  -webkit-animation: close .3s ease-in-out;
+  -moz-transform: none;
+  -moz-animation: close .3s ease-in-out;
+  transform: none;
+  animation: close .3s ease-in-out;
+}
+@-webkit-keyframes close {
+  0%      {-webkit-transform: translate3d(-240px,0,0);}
+  100%  {-webkit-transform: none;}
+}
+@-moz-keyframes close {
+  0%       {-moz-transform: translate3d(-240px,0,0);}
+  100%  {-moz-transform: none;}
+}
+@keyframes close {
+  0%       {transform: translate3d(-240px,0,0);}
+  100%  {transform: none;}
+}
+
+}
