@@ -12,9 +12,9 @@ a {
   color: $primaryColor;
   text-decoration: none;
 }
-a:visited {
-  color: #464646;
-}
+// a:visited {
+//   color: lighten($primaryColor, 20%);
+// }
 a:hover {
   color: darken($primaryColor, 20%);
   text-decoration: underline;

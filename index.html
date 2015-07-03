@@ -16,7 +16,12 @@
 </head>
 
 <body>
+  <div class="outerWrap slide">
   <header>
+
+    <ul class="burger slide">
+      <li></li><li></li><li></li>
+    </ul>
 
     <div class="gridEdge noMargin">
       <div class="col-2-5">
@@ -24,11 +29,27 @@
       </div>
       <div class="col-3-5">
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Products</a>
-          <a href="#">About Us</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="menuItemHasChildren">
+              <a href="#">Products</a>
+              <ul class="subLevelOne left">
+                <li><a href="#">Sub item one</a></li>
+                <li class="hasSubLevel">
+                  <a href="#">Sub item two</a>
+                  <ul class="subLevelTwo">
+                    <li><a href="#">Sub level two item one</a></li>
+                    <li><a href="#">Sub level two item two</a></li>
+                    <li><a href="#">Sub level two item three</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Sub item three</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -275,7 +296,7 @@
 
   <div class="gridEdge noMargin">
     <h2>Buttons and forms</h2>
-    <p class="space">A quick reminder, use <code>&lt;a&gt;</code> when you are linking with an <code>href</code>. Use <code>&lt;button&gt;</code> inside a form.</p>
+    <p class="space">Note, use <code>&lt;a&gt;</code> when you are linking with an <code>href</code>. Use <code>&lt;button&gt;</code> inside a form.</p>
     <h3>Buttons</h3>
     <h4>Anchor buttons</h4>
     <p class="margin">
@@ -488,6 +509,7 @@
   </div>
   
   </main>
+
   <footer>
 
   </footer>
@@ -523,8 +545,9 @@
       
 
   </script>
-  <script src='js/main.js'></script>
+  <script src='js/min/main-min.js'></script>
   <noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
 
+  </div><!-- end .outerWrap -->
 </body>
 </html>
