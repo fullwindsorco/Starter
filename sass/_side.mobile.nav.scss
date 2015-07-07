@@ -24,13 +24,86 @@ nav {
     position: fixed;
     top: 0;
     margin: 0;
-    background-color: #49A4B3;
+    background-color: darken($primaryColor, 10%);
     width: 100%;
   }
   &.mobile {
     display: none;
+    > ul {
+      float: right;
+      height: 100%;
+      overflow-y: auto;
+      width: 240px;
+      li {
+        padding: 0 30px;
+        display: block;
+        a {
+          color: #fff;
+          padding: 0;
+        }
+        .subLevelOne {
+          background-color: darken($primaryColor, 15%);
+          box-shadow: none;
+          border-radius: 0;
+          position: relative;
+          left: -30px;
+          width: 134%;
+          li a {
+            padding: 3px 0;
+          }
+          > li {
+            &:after {
+              top: 13px;
+            }
+          }
+        }
+        [class^='subLevel'] li:hover .subLevelTwo {
+          background-color: darken($primaryColor, 20%);
+          border-radius: none;
+          box-shadow: inset 0 0 14px rgba(0, 0, 0, .3);
+          left: -30px;
+          margin-top: 10px;
+          position: relative;
+          width: 133%;
+        }
+      }
+      > li {
+        &:after {
+          -ms-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);  
+        }
+        // [class^='subLevel'] li:hover:after {
+        //     content: '';
+        //     -ms-transform: rotate(90deg);
+        //     -webkit-transform: rotate(90deg);
+        //     transform: rotate(90deg);
+        // }
+      }
+    }
     @include break($navBreak) {
       display: block;
+    }
+    .hasChildren {
+      &:hover:after {
+        content: '';
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      &:after {
+        background-image: url(../images/sprite.png);
+        background-image: url(../images/sprite.svg);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: 1px -147px;
+        content: '';
+        height: 15px;
+        position: absolute;
+        right: 20px;
+        top: 26px;
+        width: 9px;
+      }
     }
   }
 }
@@ -62,36 +135,6 @@ body {
 }
 
 @include break($navBreak) {
-
-/*  Mobile Nav Styling  */
-
-nav.slide {
-  display: block;
-}
-
-nav > ul {
-  float: right;
-  height: 100%;
-  overflow-y: auto;
-  width: 240px;
-}
-nav > ul > .menu-item {
-  display: block;
-  float: none;
-}
-nav > ul > li > a {
-  display: block;
-  padding: 10px 25px;
-  letter-spacing: 3px;
-  font-size: 14px;
-}
-nav > ul > li > a.logo {
-  display: none;
-}
-
-.header-section {
-  margin-top: 60px;
-}
 
 
 // CONTENT ANNIMATION

@@ -10,7 +10,7 @@ $baseFontSize: 16px;
 $baseLineHeight: 1.5;
 $baseBottomMargin: $baseFontSize;
 
-$primaryColor: #1F62AF;
+$primaryColor: #3D424D;
 $secondaryColor: #6DE104;
 
 $primaryBorderRadius: 2px;
@@ -24,7 +24,12 @@ $navBreak: 1040;
 */
 
 @mixin sprite($pos) {
-  background: transparent url('../images/sprite.svg') no-repeat;
+  background-image: url(../images/sprite.png);
+  background-image: 
+    linear-gradient(transparent, transparent),
+    url(../images/sprite.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
   background-position: $pos;
 }
 @mixin break($point) {

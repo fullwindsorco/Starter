@@ -1,3 +1,6 @@
+body {
+  background-color: #eaeaea;
+}
 .mainWrap {
   background-color: #FFF;
   margin: 0 auto;
@@ -96,34 +99,35 @@ nav {
     }
     li {
       list-style-type: none; 
-      // @include break(1240) {
-      //   padding: 0 7px;
-      // }
     }
     > li {
       display: inline-block;
       margin-bottom: 0;
-      padding: 0 9px;
-      position: relative; 
+      padding: 0;
+      position: relative;
+      &:after {
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
       > a {
         color: $primaryColor;
         line-height: 3.2;
+        padding: 0 20px;
         text-decoration: none;
         &:hover {
           color: $primaryColor;
         }
       }
-      &.menuItemHasChildren:hover {
-        background-color: #fff;
-        cursor: pointer;
-        .subLevelOne {
-          display: block; 
+      &.hasChildren {
+        > a {
+          padding: 0px 25px 0px 15px;
         }
-        &:after {
-          content: '';
-          -ms-transform: rotate(90deg);
-          -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+        &:hover {
+          cursor: pointer;
+          .subLevelOne {
+            display: block; 
+          }
         }
       }
       [class^='subLevel'] {
@@ -144,9 +148,6 @@ nav {
           line-height: normal;
           padding: 3px 35px 3px 20px;
           text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
         }
         li {
           margin-bottom: 5px;
@@ -182,19 +183,24 @@ nav {
   }
 } //ending nav tag
 
-.hasSubLevel {
+.hasChildren {
   position: relative;
   &:after {
-    @include sprite(0 0);
+    @include sprite(0 -160px);
     background-color: transparent;
     background-repeat: no-repeat;
     content: '';
     height: 16px;
     margin-top: -5px;
     position: absolute;
-    right: 20px;
+    right: 5px;
     top: 50%;
     width: 9px;
+  }
+}
+.subLevelOne {
+  .hasChildren:after {
+    right: 10px;    
   }
 }
 
