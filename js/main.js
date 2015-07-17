@@ -13,12 +13,13 @@ $(document).ready(function() {
   });
 
 
-// Accordions
+  // Accordions
 
   $('.accButton').click(function() {
-    $(this).addClass('current');
+    $(this).toggleClass('current');
     $(this).toggleClass('arrowUp');
     $(this).siblings('.accButton').removeClass('arrowUp');
+    $(this).siblings('.accButton').removeClass('current');
     $(this).not().next().siblings('.accPanel').slideUp();
     $(this).next('.accPanel').slideToggle(200);
   });
