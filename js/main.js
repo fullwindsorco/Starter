@@ -2,11 +2,14 @@ $(document).ready(function() {
 
 // Tabs
 
-  $('.tabs > div').parent().next('.panels').children('div').first().addClass('current');
-  $('.tabs > div').first().addClass('current');
+  $('.tabs').each(function(){
+    $(this).children('div').first().addClass('current');
+    $(this).next('.panels').children('div').first().addClass('current');
+  });
   $('.tabs > div').click(function() {
-    var indexTab = $( ".tabs div" ).index( this );
-    $('.tabs > div').removeClass('current');
+    var tabGroup = $(this).parent('.tabs');
+    var indexTab = $(tabGroup).children('div').index( this );
+    $(tabGroup).children('div').removeClass('current');
     $(this).addClass('current');
     $(this).parent().next('.panels').children('div').removeClass('current');
     $(this).parent().next('.panels').children('div').eq(indexTab).addClass('current');
