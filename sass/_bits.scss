@@ -71,7 +71,7 @@ hr {
 .gridInset {
   @extend .clearFix;
   margin-bottom: $largeSpace;
-  [class*='col-'] {
+  > [class*='col-'] {
     padding: 0 $largeSpace / 2;
   }
 }
@@ -79,7 +79,7 @@ hr {
   @extend .clearFix;
   // margin-left: -$largeSpace;
   margin-bottom: $largeSpace;
-  [class*='col-'] {
+  > [class*='col-'] {
     padding: 0;
   }
 }

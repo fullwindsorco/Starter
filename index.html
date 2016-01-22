@@ -298,28 +298,47 @@
 
   <div class="gridEdge noMargin">
     <h2>Buttons and forms</h2>
-    <p class="space">Note, use <code>&lt;a&gt;</code> when you are linking with an <code>href</code>. Use <code>&lt;button&gt;</code> inside a form.</p>
+    <p class="space">Note, use <code>&lt;a&gt;</code> when you are linking with an <code>href</code>. Use <code>&lt;button&gt;</code> or <code>&lt;input type="submit"&gt;</code> inside a form.</p>
     <h3>Buttons</h3>
-    <h4>Anchor buttons</h4>
-    <p class="margin">
-      <a class="button" href="#">Button</a><a class="button alternate" href="#">Alternate</a>
-    </p>
-    <p class="margin textRight">
-      <a class="button" href="#">Button</a><a class="button alternate" href="#">Alternate</a>
-    </p>
-    <p class="margin">
-      <a class="button full" href="#">Button</a><a class="button alternate full" href="#">Alternate</a>
-    </p>
-    <h4>&lt;button&gt; tag buttons</h4>
-    <p>
-      <button>Button</button><button class="alternate">Alternate</button>
-    </p>
-    <p class="margin textRight">
-      <button class="left">Button</button><button class="left alternate">Alternate</button>
-    </p>
-    <p class="margin textRight">
-      <button class="full">Button</button><button class="full alternate">Alternate</button>
-    </p>
+    <div class="gridGutter">
+      <div class="col-1-3">
+        <h4>&lt;a&gt;</h4>
+        <p>
+          <a class="button" href="#">Button</a><a class="button alternate" href="#">Alternate</a>
+        </p>
+        <p class="textRight">
+          <a class="button" href="#">Button</a><a class="button alternate" href="#">Alternate</a>
+        </p>
+        <p>
+          <a class="button full" href="#">Button</a><a class="button alternate full" href="#">Alternate</a>
+        </p>
+      </div>
+      <div class="col-1-3">
+        <h4>&lt;button&gt;</h4>
+        <p>
+          <button>Button</button><button class="alternate">Alternate</button>
+        </p>
+        <p class="textRight">
+          <button>Button</button><button class="alternate">Alternate</button>
+        </p>
+        <p class="textRight">
+          <button class="full">Button</button><button class="full alternate">Alternate</button>
+        </p>
+      </div>
+      <div class="col-1-3">
+        <h4>&lt;input&gt;</h4>
+        <p>
+          <input type="submit" value="Button"></input>
+          <input type="submit" class="alternate" value="Alternative"></input>
+        </p>
+        <p class="textRight">
+          <input type="submit" value="Button"></input><input type="submit" class="alternate" value="Alternative"></input>
+        </p>
+        <p>
+          <input type="submit" value="Button" class="full"></input><input type="submit" class="alternate full" value="Alternative"></input>
+        </p>
+      </div>
+    </div>
   </div>
   <div class="gridGutter">
     <div class="col-1">

@@ -250,7 +250,9 @@ form {
     }
   }
 }
-button, a.button {
+button,
+a.button,
+input[type='submit'] {
   border: none;
   background-color: $primaryColor;
   border-radius: $primaryBorderRadius;
@@ -263,6 +265,7 @@ button, a.button {
   &.full {
     margin-bottom: $smallSpace;
     margin-right: 0;
+    text-align: center;
     width: 100%;
     &:last-child {
       margin-bottom: 0;
@@ -287,12 +290,15 @@ button, a.button {
     text-decoration: none;
   }
 }
-input, textarea, .dropDown {
+input[type="text"],
+textarea,
+.dropDown {
   border: solid 1px #BEBEBE;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   margin-bottom: $mediumSpace;
   padding: 6px 10px;
+  -webkit-appearance: none;
   width: 100%;
   &:last-child:not(.keepMargin) {
     margin-bottom: 0;
@@ -313,6 +319,17 @@ form input[type="radio"] {
   margin-right: 10px;
   width: auto;
 }
+// form input[type='submit'] {
+//   background-color: $primaryColor;
+//   border: none;
+//   border-radius: $primaryBorderRadius;
+//   color: #fff;
+//   cursor: pointer;
+//   transition: all 0.5s ease;
+//   &:hover {
+//     background-color: darken($primaryColor, 10%);
+//   }
+// }
 .bulletsCheckboxes {
   li {
     display: table;
