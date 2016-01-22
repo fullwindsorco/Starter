@@ -12,9 +12,6 @@ a {
   color: $primaryColor;
   text-decoration: none;
 }
-// a:visited {
-//   color: lighten($primaryColor, 20%);
-// }
 a:hover {
   color: darken($primaryColor, 20%);
   text-decoration: underline;
@@ -35,7 +32,7 @@ h4 {
   color: #111;
   font-weight: bold;
   font-family: $helvetica;
-  line-height: $baseLineHeight -.3;
+  line-height: $baseLineHeight - .3;
   margin-bottom: $smallSpace;
 }
 h1 {

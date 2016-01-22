@@ -1,6 +1,5 @@
-/* 
-========================== variables
-*/
+ 
+// ========================== Variables
 
 $largeSpace: 60px;
 $mediumSpace: 20px;
@@ -16,12 +15,11 @@ $secondaryColor: #6DE104;
 $primaryBorderRadius: 3px;
 $borderWidth: 1px;
 $uiBorders: solid $borderWidth #BEBEBE;
+$textShadow: 1px 2px 0 rgba(0, 0, 0, 0.2);
 
 $navBreak: 1040;
 
-/* 
-========================== mixins
-*/
+// ========================== Mixins
 
 @mixin sprite($pos) {
   background-image: url(../images/sprite.png);
@@ -39,9 +37,7 @@ $navBreak: 1040;
   @media (min-width: $min + px) and (max-width: $max + px) { @content; }
 }
 
-/* 
-========================== other high level items
-*/
+// ========================== Other high level items
 
 .clearFix:after {
   content: "";
@@ -58,9 +54,7 @@ hr {
   }
 }
 
-/* 
-========================== grids 
-*/
+// ========================== Grids
 
 .gridGutter {
   @extend .clearFix;

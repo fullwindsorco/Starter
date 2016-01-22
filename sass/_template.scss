@@ -236,7 +236,7 @@ nav {
   }
 }
 
-// Forms
+// Forms and Buttons
 
 form {
   button {
@@ -262,10 +262,10 @@ input[type='submit'] {
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   margin-right: $smallSpace;
+  text-align: center;
   &.full {
     margin-bottom: $smallSpace;
     margin-right: 0;
-    text-align: center;
     width: 100%;
     &:last-child {
       margin-bottom: 0;
@@ -319,17 +319,6 @@ form input[type="radio"] {
   margin-right: 10px;
   width: auto;
 }
-// form input[type='submit'] {
-//   background-color: $primaryColor;
-//   border: none;
-//   border-radius: $primaryBorderRadius;
-//   color: #fff;
-//   cursor: pointer;
-//   transition: all 0.5s ease;
-//   &:hover {
-//     background-color: darken($primaryColor, 10%);
-//   }
-// }
 .bulletsCheckboxes {
   li {
     display: table;
@@ -342,8 +331,19 @@ form input[type="radio"] {
 
 // Icons
 
-.icon-template-logo {
-  background-position: 0 20px;
+[class^='icon'] {
+  padding-left: 20px;
+  position: relative;
+  &:before {
+    @include sprite(0 0);
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    left: 0;
+    top: 5px;
+    width: 15px;   
+  }
 }
 .accButton, .arrowUp {
   background-position: right center;
