@@ -1,21 +1,20 @@
-$helvetica: 'Helvetica Neue', 'Arial', Sans-Serif;
-
 body {
-  background-color: #EAEAEA;
   color: #5b5b5b;
-  font-size: $baseFontSize;
+  font-size: 16px;
   font-family: $helvetica;
-  line-height: $baseLineHeight;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 a {
   color: $primaryColor;
   text-decoration: none;
+  &:hover {
+    color: darken($primaryColor, 20%);
+    text-decoration: underline;
+  }
 }
-a:hover {
-  color: darken($primaryColor, 20%);
-  text-decoration: underline;
-}
+
 p {
   margin-bottom: 20px;
   &:last-child {
@@ -25,59 +24,55 @@ p {
     margin-bottom: 20px;
   }
 }
+
 h1,
 h2,
 h3,
 h4 {
   color: #111;
-  font-weight: bold;
   font-family: $helvetica;
-  line-height: $baseLineHeight - .3;
-  margin-bottom: $smallSpace;
+  line-height: 1.2;
 }
+
 h1 {
-  font-size: $baseFontSize + 30;
-  margin-bottom: $baseBottomMargin + 15;
+  font-size: 46px;
+  margin-bottom: 31px;
 }
+
 h2 {
-  font-size: $baseFontSize + 10;
-  margin-bottom: $baseBottomMargin + 8;
+  font-size: 26px;
+  margin-bottom: 24px;
 }
+
 h3 {
-  font-size: $baseFontSize + 2;
-  margin-bottom: $baseBottomMargin + 5;
+  font-size: 18px;
+  margin-bottom: 21px;
 }
+
 h4 {
-  font-size: $baseFontSize;
-  margin-bottom: $baseBottomMargin;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
+
 blockquote {
   border-bottom: solid 1px #EAEAEA;
   border-top: solid 1px #EAEAEA;
-  font-size: $baseFontSize + 5;
+  font-size: 21px;
   margin-bottom: $mediumSpace;
   padding: $mediumSpace $largeSpace;
   &.block {
     color: #333;
-    font-size: $baseFontSize;
+    font-size: 16px;
     font-style: italic;
   }
   .name {
     color: #5b5b5b;
     display: block;
-    font-size: $baseFontSize - 3;
+    font-size: 13px;
     font-style: normal;
     margin-top: $smallSpace;
     &:before, &:after {
       content: '';
-    }
-  }
-  span {
-    position: relative;
-    &:after {
-      content: '\201D';
-      right: -13px;
-      top: -5px;
     }
   }
   span {
@@ -88,6 +83,11 @@ blockquote {
       position: absolute;
       top: -5px;
       text-indent: 0;
+    }
+    &:after {
+      content: '\201D';
+      right: -13px;
+      top: -5px;
     }
   }
 }

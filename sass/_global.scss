@@ -1,0 +1,47 @@
+@import "compass/css3";
+@import "normalize";
+@import "bits";
+@import "grid";
+@import "typography";
+@import "ui";
+@import "jquery.infieldLabel";
+@import "owl.carousel";
+@import "owl.theme";
+@import "nav";
+@import "navMobile";
+
+body {
+  background-color: #eaeaea;
+}
+
+.mainWrap {
+  background-color: #FFF;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: $largeSpace;
+  width: 90%;
+}
+
+header {
+  @extend .mainWrap;
+  background-color: transparent;
+  padding: $mediumSpace 0;
+  h1 {
+    float: left;
+  }
+}
+
+aside {
+  .nav {
+    li {
+      border-bottom: solid 1px #EAEAEA;
+      &:first-child {
+        border-top: solid 1px #EAEAEA;
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+    }
+  }
+}

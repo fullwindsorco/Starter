@@ -1,0 +1,125 @@
+// ========================== Navigation
+
+nav {
+  float: right;
+  line-height: 3.5;
+  a {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+  > ul {
+    font-size: 17px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0;
+    text-transform: capitalize;
+    ul {
+      margin: 0;
+    }
+    li {
+      list-style-type: none; 
+    }
+    > li {
+      display: inline-block;
+      margin-bottom: 0;
+      padding: 0;
+      position: relative;
+      &:after {
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      > a {
+        color: $primaryColor;
+        line-height: 3.2;
+        padding: 0 20px;
+        text-decoration: none;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+      &.hasChildren {
+        > a {
+          padding: 0px 25px 0px 15px;
+        }
+        &:hover {
+          background-color: #fff;
+          cursor: pointer;
+          .subLevelOne {
+            display: block; 
+          }
+        }
+      }
+      [class^='subLevel'] {
+        background-color: #fff;
+        box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.4);
+        display: none;
+        left: 0;
+        line-height: 1.5;
+        min-width: 225px;
+        padding: 10px 0;
+        position: absolute;
+        text-shadow: none;
+        text-transform: none;
+        z-index: 1; 
+        a {
+          color: #71787f;
+          display: block;
+          line-height: normal;
+          padding: 3px 35px 3px 20px;
+          text-decoration: none;
+        }
+        li {
+          margin-bottom: 5px;
+          position: relative;
+          &:hover .subLevelTwo {
+            display: block;
+            left: 225px;
+            top: 0;
+          }
+        }
+        &.left {
+          box-shadow: -5px 5px 0 rgba(0, 0, 0, 0.4);
+          left: auto;
+          right: 0;
+          li:hover .subLevelTwo {
+            box-shadow: -5px 5px 0 rgba(0, 0, 0, 0.4);
+            display: block;
+            left: auto;
+            right: 225px;
+          }
+        }
+      }
+    }
+    a {
+      font-weight: 500; 
+      &:hover {
+        text-decoration: none; 
+      }
+    }
+  }
+  @include break($navBreak) {
+    display: none;
+  }
+} //ending nav tag
+
+.hasChildren {
+  position: relative;
+  &:after {
+    @include sprite(0 -160px);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    content: '';
+    height: 16px;
+    margin-top: -5px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 9px;
+  }
+}
+.subLevelOne {
+  .hasChildren:after {
+    right: 10px;    
+  }
+}
