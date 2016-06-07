@@ -2,8 +2,9 @@
 // ========================== Variables
 
 $largeSpace: 60px;
-$mediumSpace: 20px;
-$smallSpace: 10px;
+$mediumSpace: 40px;
+$smallSpace: 20px;
+$extraSmallSpace: 10px;
 
 $helvetica: 'Helvetica Neue', 'Arial', Sans-Serif;
 
@@ -17,6 +18,11 @@ $uiBorders: solid $borderWidth #BEBEBE;
 $textShadow: 1px 2px 0 rgba(0, 0, 0, 0.2);
 
 $navBreak: 1040;
+$extraSmall: 400;
+$small: 500;
+$medium: 800;
+$large: 1000;
+$extraLarge: 1200;
 
 // ========================== Mixins
 
@@ -78,6 +84,6 @@ img {
 .center {
   text-align: center;
   img {
-    margin-bottom: $mediumSpace;
+    margin-bottom: $smallSpace;
   }
 }
