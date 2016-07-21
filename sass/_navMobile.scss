@@ -66,6 +66,9 @@ nav {
           position: relative;
           width: 133%;
         }
+        &.hasChildren:hover {
+          background-color: transparent;
+        }
       }
       > li {
         &:after {

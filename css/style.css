@@ -737,6 +737,8 @@ nav.mobile {
         margin-top: 10px;
         position: relative;
         width: 133%; }
+      nav.mobile > ul li.hasChildren:hover {
+        background-color: transparent; }
     nav.mobile > ul > li:after {
       -ms-transform: rotate(0deg);
       -webkit-transform: rotate(0deg);
