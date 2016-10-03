@@ -3,7 +3,7 @@
 .gridGutter {
   @extend .clearFix;
   margin-left: -$largeSpace;
-  &.mediumPad {
+  &.mediumGutter {
     margin-left: -$mediumSpace;
   }
 }
@@ -13,7 +13,7 @@
   > [class*='col-'] {
     padding: 0 $largeSpace / 2;
   }
-  &.mediumPad {
+  &.mediumGutter {
     > [class*='col-'] {
       padding: 0 $mediumSpace / 2;
     }
@@ -122,7 +122,13 @@
   .noMargin > & {
     margin-bottom: 0;
   }
-  .mediumPad > & {
+  .mediumMargin > & {
+    margin-bottom: $mediumSpace;
+  }
+  .smallMargin > & {
+    margin-bottom: $smallSpace;
+  }
+  .mediumGutter > & {
     padding-left: $mediumSpace;
   }
 }
@@ -136,7 +142,7 @@
 }
 
 .col-5-6 {
-  width: 83.34%;  
+  width: 83.34%;
 }
 
 .col-4-5 {
@@ -204,9 +210,15 @@
 
 .col-1-6 {
   width: 16.66%;
+  @include break($large) {
+    width: 100%;
+  }
 }
 
 .col-1-8 {
   width: 12.5%;
+  @include break($large) {
+    width: 100%;
+  }
 }
 
