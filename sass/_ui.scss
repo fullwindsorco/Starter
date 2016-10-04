@@ -2,7 +2,7 @@
 // ========================== Lists
 
 .bullets {
-  margin-left: $mediumSpace;
+  margin-left: $smallSpace;
   li {
     margin-left: 15px;
     list-style-type: disc;
@@ -17,7 +17,7 @@
 }
 
 .numbered {
-  margin-left: $mediumSpace;
+  margin-left: $smallSpace;
   li {
     margin-left: 15px;
     list-style-type: decimal;
@@ -41,7 +41,7 @@ form {
       float: none;
     }
     &:last-child {
-      margin-right: $smallSpace;
+      margin-right: $extraSmallSpace;
     }
   }
 }
@@ -57,10 +57,10 @@ input[type='submit'] {
   display: inline-block;
   font-size: 16px;
   line-height: 16px;
-  margin-right: $smallSpace;
+  margin-right: $extraSmallSpace;
   text-align: center;
   &.full {
-    margin-bottom: $smallSpace;
+    margin-bottom: $extraSmallSpace;
     margin-right: 0;
     width: 100%;
     &:last-child {
@@ -93,7 +93,7 @@ textarea,
   border: solid 1px #BEBEBE;
   font-size: 16px;
   line-height: 16px;
-  margin-bottom: $mediumSpace;
+  margin-bottom: $smallSpace;
   padding: 6px 10px;
   -webkit-appearance: none;
   width: 100%;
@@ -210,7 +210,7 @@ form input[type="radio"] {
   margin-top: -$borderWidth;
   > div {
     display: none;
-    padding: $mediumSpace;
+    padding: $smallSpace;
     &.current {
       display: block;
     }
@@ -225,7 +225,7 @@ form input[type="radio"] {
   border-bottom: $uiBorders;
   cursor: pointer;
   font-weight: bold;
-  padding: 8px 50px 8px $mediumSpace;
+  padding: 8px 50px 8px $smallSpace;
   position: relative;
   &.active {
     border-bottom: $uiBorders;
@@ -255,7 +255,7 @@ form input[type="radio"] {
   border: $uiBorders;
   border-top: none;
   display: none;
-  padding: $mediumSpace;
+  padding: $smallSpace;
   &.current {
     display: block;
   }
