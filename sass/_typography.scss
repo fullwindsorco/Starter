@@ -93,4 +93,7 @@ blockquote {
       top: -5px;
     }
   }
+  @include break($small) {
+    padding: 20px 10px;
+  }
 }
