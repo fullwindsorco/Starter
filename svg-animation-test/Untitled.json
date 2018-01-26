@@ -1,0 +1,753 @@
+{
+	"DOMDocument" : {
+		"Shape" : [
+			{
+				"charid" : "1",
+				"path" : [
+					{
+						"color" : "#0066cc",
+						"colorOpacity" : "1",
+						"d" : "M 95 47.5 q 0 -19.700001 -13.900002 -33.599998 q -13.900002 -13.9 -33.599998 -13.9 q -19.700001 0 -33.599998 13.9 q -13.9 13.9 -13.9 33.599998 q 0 19.699997 13.9 33.599998 q 13.9 13.900002 33.599998 13.900002 q 19.699997 0 33.599998 -13.900002 q 13.900002 -13.900002 13.900002 -33.599998 ",
+						"pathType" : "Fill",
+						"stroke" : "none"
+					}
+				]
+			}
+		],
+		"Bitmaps" : [],
+		"Sounds" : [],
+		"Text" : [],
+		"Timeline" : [
+			{
+				"charid" : "3",
+				"frameCount" : "70",
+				"Frame" : [
+					{
+						"num" : "0",
+						"Command" : [
+							{
+								"cmdType" : "Place",
+								"charid" : "1",
+								"objectId" : "1",
+								"placeAfter" : "0",
+								"transformMatrix" : "1,0,0,1,0,0"
+							}
+						]
+					}
+				]
+			},
+			{
+				"frameCount" : "70",
+				"Frame" : [
+					{
+						"num" : "0",
+						"Command" : [
+							{
+								"cmdType" : "Place",
+								"charid" : "3",
+								"objectId" : "1",
+								"placeAfter" : "0",
+								"transformMatrix" : "1,0,0,1,55.049999,235.949997"
+							},
+							{
+								"cmdType" : "UpdateColorTransform",
+								"objectId" : "1",
+								"colorMatrix" : "1,0,1,0,1,0,1,0,"
+							}
+						]
+					},
+					{
+						"num" : "1",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,59.950001,232.399994"
+							}
+						]
+					},
+					{
+						"num" : "2",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,64.800003,228.849991"
+							}
+						]
+					},
+					{
+						"num" : "3",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,69.699997,225.300003"
+							}
+						]
+					},
+					{
+						"num" : "4",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,74.550003,221.699997"
+							}
+						]
+					},
+					{
+						"num" : "5",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,79.449997,218.149994"
+							}
+						]
+					},
+					{
+						"num" : "6",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,84.349998,214.599991"
+							}
+						]
+					},
+					{
+						"num" : "7",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,89.199997,211.050003"
+							}
+						]
+					},
+					{
+						"num" : "8",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,94.099998,207.5"
+							}
+						]
+					},
+					{
+						"num" : "9",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,99,203.949997"
+							}
+						]
+					},
+					{
+						"num" : "10",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,103.849998,200.399994"
+							}
+						]
+					},
+					{
+						"num" : "11",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,108.75,196.799988"
+							}
+						]
+					},
+					{
+						"num" : "12",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,113.599998,193.25"
+							}
+						]
+					},
+					{
+						"num" : "13",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,118.5,189.699997"
+							}
+						]
+					},
+					{
+						"num" : "14",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,123.399994,186.149994"
+							}
+						]
+					},
+					{
+						"num" : "15",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,128.25,182.600006"
+							}
+						]
+					},
+					{
+						"num" : "16",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,133.149994,179.049988"
+							}
+						]
+					},
+					{
+						"num" : "17",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,138.050003,175.449997"
+							}
+						]
+					},
+					{
+						"num" : "18",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,142.899994,171.899994"
+							}
+						]
+					},
+					{
+						"num" : "19",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,147.800003,168.350006"
+							}
+						]
+					},
+					{
+						"num" : "20",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,152.649994,164.799988"
+							}
+						]
+					},
+					{
+						"num" : "21",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,157.550003,161.25"
+							}
+						]
+					},
+					{
+						"num" : "22",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,162.449997,157.699997"
+							}
+						]
+					},
+					{
+						"num" : "23",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,167.300003,154.149994"
+							}
+						]
+					},
+					{
+						"num" : "24",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,172.199997,150.549988"
+							}
+						]
+					},
+					{
+						"num" : "25",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,177.050003,147"
+							}
+						]
+					},
+					{
+						"num" : "26",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,181.949997,143.449997"
+							}
+						]
+					},
+					{
+						"num" : "27",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,186.850006,139.899994"
+							}
+						]
+					},
+					{
+						"num" : "28",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,191.699997,136.350006"
+							}
+						]
+					},
+					{
+						"num" : "29",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,196.600006,132.799988"
+							}
+						]
+					},
+					{
+						"num" : "30",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,201.5,129.25"
+							}
+						]
+					},
+					{
+						"num" : "31",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,206.350006,125.649994"
+							}
+						]
+					},
+					{
+						"num" : "32",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,211.25,122.099998"
+							}
+						]
+					},
+					{
+						"num" : "33",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,216.100006,118.549995"
+							}
+						]
+					},
+					{
+						"num" : "34",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,221,115"
+							}
+						]
+					},
+					{
+						"num" : "35",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,225.300003,118.75"
+							}
+						]
+					},
+					{
+						"num" : "36",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,229.550003,122.550003"
+							}
+						]
+					},
+					{
+						"num" : "37",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,233.850006,126.300003"
+							}
+						]
+					},
+					{
+						"num" : "38",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,238.149994,130.100006"
+							}
+						]
+					},
+					{
+						"num" : "39",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,242.449997,133.850006"
+							}
+						]
+					},
+					{
+						"num" : "40",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,246.699997,137.649994"
+							}
+						]
+					},
+					{
+						"num" : "41",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,251,141.399994"
+							}
+						]
+					},
+					{
+						"num" : "42",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,255.300003,145.149994"
+							}
+						]
+					},
+					{
+						"num" : "43",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,259.549988,148.949997"
+							}
+						]
+					},
+					{
+						"num" : "44",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,263.850006,152.699997"
+							}
+						]
+					},
+					{
+						"num" : "45",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,268.149994,156.5"
+							}
+						]
+					},
+					{
+						"num" : "46",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,272.450012,160.25"
+							}
+						]
+					},
+					{
+						"num" : "47",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,276.700012,164.050003"
+							}
+						]
+					},
+					{
+						"num" : "48",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,281,167.800003"
+							}
+						]
+					},
+					{
+						"num" : "49",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,285.299988,171.550003"
+							}
+						]
+					},
+					{
+						"num" : "50",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,289.549988,175.350006"
+							}
+						]
+					},
+					{
+						"num" : "51",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,293.850006,179.100006"
+							}
+						]
+					},
+					{
+						"num" : "52",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,298.149994,182.899994"
+							}
+						]
+					},
+					{
+						"num" : "53",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,302.450012,186.649994"
+							}
+						]
+					},
+					{
+						"num" : "54",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,306.700012,190.449997"
+							}
+						]
+					},
+					{
+						"num" : "55",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,311,194.199997"
+							}
+						]
+					},
+					{
+						"num" : "56",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,315.299988,197.949997"
+							}
+						]
+					},
+					{
+						"num" : "57",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,319.549988,201.75"
+							}
+						]
+					},
+					{
+						"num" : "58",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,323.850006,205.5"
+							}
+						]
+					},
+					{
+						"num" : "59",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,328.149994,209.300003"
+							}
+						]
+					},
+					{
+						"num" : "60",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,332.450012,213.050003"
+							}
+						]
+					},
+					{
+						"num" : "61",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,336.700012,216.850006"
+							}
+						]
+					},
+					{
+						"num" : "62",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,341,220.600006"
+							}
+						]
+					},
+					{
+						"num" : "63",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,345.299988,224.350006"
+							}
+						]
+					},
+					{
+						"num" : "64",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,349.549988,228.149994"
+							}
+						]
+					},
+					{
+						"num" : "65",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,353.850006,231.899994"
+							}
+						]
+					},
+					{
+						"num" : "66",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,358.149994,235.699997"
+							}
+						]
+					},
+					{
+						"num" : "67",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,362.450012,239.449997"
+							}
+						]
+					},
+					{
+						"num" : "68",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,366.700012,243.25"
+							}
+						]
+					},
+					{
+						"num" : "69",
+						"Command" : [
+							{
+								"cmdType" : "Move",
+								"objectId" : "1",
+								"transformMatrix" : "1,0,0,1,371,247"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
